@@ -1,3 +1,158 @@
-html{
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    cursor: pointer;
+}
+
+p a{
+    font-family: 'Archivo', sans-serif;
+}
+
+
+
+h1{
+    max-width: 808px;
+    color: aliceblue;
+    font-size: 3.157em;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+.big{
+
+}
+
+.regular{
+
+}
+
+.small{
+
+}
+
+
+
+header{
+    justify-content: space-between;
+    display: flex;
+    right: 0;
+    padding: 1rem 0;
+    position: fixed;
+    width: 52%;
+    z-index: 1;
+}
+
+
+
+img .logoback{
+    text-align:center;
+    margin: 0 auto;
+    padding:0px;
+}
+
+.boton{
+    margin: 0 10px;
+    color: #EC096F;
+    font-weight: 700;
+    font-size: 13.5px;
+    line-height: 15px;
+    letter-spacing: 0.08em;
+}
+
+
+.button{
+    padding: 0 20px;
+    margin: 0 20px;
+    align-items: center;
+    display: flex;
+    border: 3px solid #EC096F;
+    box-sizing: border-box;
+    border-radius: 63px;
+    max-width: 261px;
+    height: 56px;
+}
+
+.button:hover{
+    transition: 0.2s;
+    background-color: #EC096F;
+    color: white;
+}
+    
+
+.boxredes{
+    text-align: center;
+    right: 0;
+    width: 65px;
+    z-index: 1;
+    position: fixed;
+    top: 35%;
+    background: #B10653;
+    box-shadow: 0px 33px 80px rgba(0, 0, 0, 0.06), 0px 9.94853px 24.1177px rgba(0, 0, 0, 0.0390953), 0px 4.13211px 10.0172px rgba(0, 0, 0, 0.03), 0px 1.4945px 3.62304px rgba(0, 0, 0, 0.0209047);
+    border-radius: 25px 0 0 25px;
+}
+
+ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+
+#inicio{
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    height: 100vh;
+    object-fit: cover;
+}
+
+.inicio__logo{
+    position: absolute;
+    top: 32%;
+}
+
+.wrapper__logo{
+    max-width: 300px;
+    margin: auto;
+}
+
+.inicio__logo img{
+    width: 300px;
+}
+
+section.home{
+    background-color: #101313;
+    height: 100vh;
+}
+
+.background{
+    background-image: url(img/lo.jpg);
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+section.bio{
+    background-color: #ffffff;
+    height: 100vh;
 }
