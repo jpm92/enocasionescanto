@@ -6,6 +6,9 @@
 
 
 html, body {
+    scroll-behavior: smooth;
+    background-color: black;
+    font-family: 'Archivo', sans-serif;
     font-size: 18px;
     height: 100%;
     width: 100%;
@@ -15,82 +18,89 @@ a{
     cursor: pointer;
 }
 
-p a{
-    font-family: 'Archivo', sans-serif;
-}
+
+/*TIPOGRAFIA*/
 
 h1{
-    max-width: 808px;
-    color: aliceblue;
-    font-size: 3.157em;
-    font-family: 'Archivo', sans-serif;
+    font-size: 1.777rem;
     font-weight: 400;
 }
 
-h2{
-
-}
-
-h3{
-
-}
-
 .big{
-
+    font-size: 1.333rem;
+    font-weight: 400;
 }
 
 .regular{
-
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .small{
-
-}
-
-header{
-    justify-content: space-between;
-    display: flex;
-    right: 0;
-    padding: 1rem 0;
-    position: fixed;
-    width: 52%;
-    z-index: 1;
+    font-size: 0.75rem;
+    font-weight: 400;
 }
 
 
+/*COLORES*/
 
-img .logoback{
-    text-align:center;
-    margin: 0 auto;
-    padding:0px;
+.g200{
+    color: #87FCEB;
 }
 
-.boton{
-    margin: 0 10px;
+.g500{
+    color: #04B499;
+}
+
+.g600{
+    color: #027866;
+}
+
+.g700{
+    color: #013C33;
+}
+
+.b100{
+    color: #F1F3F3;
+}
+
+.b200{
+    color: #DBE1E0;
+}
+
+.b600{
+    color: #556361;
+}
+
+.b700{
+    color: #313A39;
+}
+
+.b800{
+    color: #101313;
+}
+
+.r400{
     color: #EC096F;
-    font-weight: 700;
-    font-size: 13.5px;
-    line-height: 15px;
-    letter-spacing: 0.08em;
 }
 
-
-.button{
-    padding: 0 20px;
-    margin: 0 20px;
-    align-items: center;
-    display: flex;
-    border: 3px solid #EC096F;
-    box-sizing: border-box;
-    border-radius: 63px;
-    max-width: 261px;
-    height: 56px;
+.inicio{
+    height: 100vh;
+    width: 100%;
 }
 
-.button:hover{
-    transition: 0.2s;
-    background-color: #EC096F;
-    color: white;
+.inicio video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.bio{
+    height: 100vh;
+    background-color: cornflowerblue;
 }
 
 .boxredes{
@@ -110,44 +120,28 @@ ul li {
     margin: 20px 0;
 }
 
+@media screen and (min-width: 48em) {
 
-#inicio{
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
+    /*TIPOGRAFIA*/
 
-.inicio__logo{
-    position: absolute;
-    top: 32%;
-}
+    h1{
+        font-size: 2.36rem;
+        font-weight: 400;
+    }
 
-.wrapper__logo{
-    max-width: 300px;
-    margin: auto;
-}
+    .big{
+        font-size: 1.777rem;
+        font-weight: 400;
+    }
 
-.inicio__logo img{
-    width: 300px;
-}
+    .regular{
+        font-size: 1.333rem;
+        font-weight: 400;
+    }
 
-section.home{
-    background-color: #101313;
-    height: 100vh;
-}
+    .small{
+        font-size: 1rem;
+        font-weight: 400;
+    }
 
-.background{
-    background-image: url(img/lo.jpg);
-}
-
-.wrapper{
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-section.bio{
-    background-color: #ffffff;
-    height: 100vh;
 }
