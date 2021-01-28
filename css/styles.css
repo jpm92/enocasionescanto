@@ -9,7 +9,6 @@
 
 html, body {
     scroll-behavior: smooth;
-    background-color: black;
     font-family: 'Archivo', sans-serif;
     font-size: 18px;
     height: 100%;
@@ -27,6 +26,33 @@ a{
 
 ul li {
     list-style: none;
+}
+
+.etiqueta{
+    position: relative;
+}
+
+.etiqueta span{
+    background: black;
+    z-index: 1;
+    position: relative;
+    padding: 0 15px 0 0;
+}
+
+.etiqueta::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    background: #027866;
+}
+
+.wrapper{
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*TIPOGRAFIA*/
@@ -180,7 +206,6 @@ header{
 /*BIO*/
 
 .bio{
-    height: 100vh;
     background-color: black;
 }
 
