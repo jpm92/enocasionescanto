@@ -33,7 +33,6 @@ ul li {
 }
 
 .etiqueta span{
-    background: black;
     z-index: 1;
     position: relative;
     padding: 0 15px 0 0;
@@ -49,10 +48,26 @@ ul li {
     background: #027866;
 }
 
+.bgblack{
+    background: #000;
+}
+
+.bgwhite{
+    background: #F1F3F3;
+}
+
 .wrapper{
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.margin_big{
+    margin-top: 35px;
+}
+
+.margin_regular{
+    margin-top: 25px;
 }
 
 /*TIPOGRAFIA*/
@@ -206,7 +221,19 @@ header{
 /*BIO*/
 
 .bio{
+    padding: 50px 0;
     background-color: black;
+}
+
+/*MUSICA*/
+
+.musica{
+    padding: 50px 0;
+    background-color: #F1F3F3;
+}
+
+.spotify_player iframe{
+    border-radius: 20px;
 }
 
 @media screen and (min-width: 800px) {
@@ -283,5 +310,11 @@ header{
         width: 300px;
     }
     
+
+    /*BIO*/
+
+    .flex_column{
+        display: flex;
+    }
 
 }
