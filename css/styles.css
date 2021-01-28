@@ -58,7 +58,7 @@ ul li {
 
 .wrapper{
     padding: 0 20px;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -221,8 +221,12 @@ header{
 /*BIO*/
 
 .bio{
-    padding: 50px 0;
+    padding: 150px 0;
     background-color: black;
+    background-image: url(../assets/bgsobremi.jpg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: left bottom;
 }
 
 /*MUSICA*/
@@ -230,18 +234,27 @@ header{
 .musica{
     padding: 50px 0;
     background-color: #F1F3F3;
+    background-image: url(assets/bgsobremi.jpg);
 }
 
 .spotify_player iframe{
     border-radius: 20px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
     /*CLASES GENERALES*/
     a{
         font-size: 13.5px;
         letter-spacing: 0.08em;
+    }
+
+    .wrapper{
+        padding: 0 50px;
+    }
+
+    .column{
+        width: 50%;
     }
 
     /*TIPOGRAFIA*/
@@ -315,6 +328,10 @@ header{
 
     .flex_column{
         display: flex;
+    }
+
+    #margin_super{
+        margin-top: 200px;
     }
 
 }
