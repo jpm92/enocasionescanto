@@ -53,7 +53,7 @@ ul li {
 }
 
 .bgwhite{
-    background: #F1F3F3;
+    background: #DBE1E0;
 }
 
 .wrapper{
@@ -238,7 +238,7 @@ header{
 
 .musica{
     padding: 50px 0;
-    background-color: #F1F3F3;
+    background-color: #DBE1E0;
 }
 
 .spotify_player iframe{
@@ -250,11 +250,25 @@ header{
 
 .videos{
     padding: 50px 0;
-    background-color: #F1F3F3;
+    background-color: #DBE1E0;
 }
 
 .youtube_player iframe{
     border-radius: 20px;
+}
+
+
+/*EVENTOS*/
+
+.eventos{
+    padding: 50px 0;
+    background-color: #DBE1E0;
+}
+
+.ticket{
+    width: 100%;
+    height: auto;
+    background-color: #F1F3F3;
 }
 
 
@@ -345,6 +359,11 @@ header{
     
 
     /*BIO*/
+
+    .bio{
+        padding: 150px 0;
+        background-size: 40%;
+    }
 
     .flex_column{
         grid-template-columns: repeat(2, auto);
