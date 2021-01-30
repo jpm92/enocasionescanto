@@ -145,23 +145,33 @@ h1{
 /*HEADER*/
 
 header{
-    margin: 9px 0;
-    padding: 0 9px;
-    display: flex;
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(10px);
+    padding: 9px 0;
     z-index: 5;
     width: 100%;
     height: 70px;
     position: fixed;
-    justify-content: space-between;
+    
 }
 
-.minilogo img{
-    width: 50px;
+.header_wrapper{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.minilogo svg{
+    width: auto;
+    height: 52px;
 }
 
 .spotify{
+    margin: 0 9px 0 0;
+    position: absolute;
     color: #EC096F;
     width: 220px;
+    right: 0;
 }
 
 .spotify_content{
@@ -171,6 +181,11 @@ header{
     display: flex;
     border: 2px solid #EC096F;
     border-radius: 63px;
+}
+
+.spotify_content:hover{
+    transition: 0.2s;
+    background-color: #FCB0D2;
 }
 
 .spotify_content svg{
@@ -266,11 +281,14 @@ header{
 }
 
 .ticket{
+    padding: 40px 20px;
     width: 100%;
     height: auto;
     background-color: #F1F3F3;
 }
 
+
+/*FORMULARIO*/
 
 @media screen and (min-width: 900px) {
 
