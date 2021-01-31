@@ -319,6 +319,8 @@ header{
 }
 
 .input::placeholder{
+    font-size: 0.75rem;
+    font-weight: 400;
     color: #556361;
 }
 
@@ -428,4 +430,12 @@ header{
         margin-top: 200px;
     }
 
+    /*FORMULARIO*/
+
+    .input::placeholder{
+        font-size: 1rem;
+    }
+
 }
+
+
