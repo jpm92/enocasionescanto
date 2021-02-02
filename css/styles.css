@@ -48,6 +48,16 @@ ul li {
     background: #027866;
 }
 
+button{
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 8px 20px;
+    align-items: center;
+    display: flex;
+    border: 2px solid #EC096F;
+    border-radius: 63px;
+}
+
 .bgblack{
     background: #000;
 }
@@ -151,12 +161,10 @@ header{
     z-index: 5;
     width: 100%;
     height: 70px;
-    position: fixed;
-    
+    position: fixed; 
 }
 
 .header_wrapper{
-    
     display: flex;
     justify-content: center;
 }
@@ -166,9 +174,23 @@ header{
     height: 52px;
 }
 
+
+
+
+
+/*FOOTER*/
+
+footer{
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    z-index: 5;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+
 .spotify{
-    margin: 0 9px 0 0;
-    position: absolute;
     color: #EC096F;
     width: 220px;
     right: 0;
@@ -191,6 +213,8 @@ header{
 .spotify_content svg{
     width: 85px;
 }
+
+
 
 /*CAJA RRSS*/
 
@@ -290,6 +314,10 @@ header{
 
 /*FORMULARIO*/
 .formulario{
+    background-position: left bottom;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/bg_auroraboreal.png);
     width: 100%;
     position: absolute;
     z-index: 2;
@@ -305,7 +333,8 @@ header{
 }
 
 .input{
-	background-color: #000;
+    font-family: 'Archivo', sans-serif;
+	background-color: transparent;
 	padding: .5rem 0;
 	margin: .5rem 0;
 	border: none;
@@ -319,6 +348,7 @@ header{
 }
 
 .input::placeholder{
+    font-family: 'Archivo', sans-serif;
     font-size: 0.75rem;
     font-weight: 400;
     color: #556361;
