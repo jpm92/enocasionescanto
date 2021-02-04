@@ -17,10 +17,6 @@ html, body {
 
 a{
     text-decoration: none;
-    font-family: 'Archivo', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
     cursor: pointer;
 }
 
@@ -103,6 +99,7 @@ h1{
 }
 
 .button{
+    letter-spacing: 0.08em;
     font-size: 0.60rem;
     font-weight: 700;
 }
@@ -158,7 +155,7 @@ header{
     background: rgba(0, 0, 0, 0.01);
     backdrop-filter: blur(10px);
     padding: 9px 0;
-    z-index: 5;
+    z-index: 3;
     width: 100%;
     height: 70px;
     position: fixed; 
@@ -175,43 +172,44 @@ header{
 }
 
 
+.burger{
+    padding: 10px 20px 0 0;
+    right: 0;
+    position: absolute;
+}
+
 
 
 
 /*FOOTER*/
 
 footer{
+    padding: 9px 0;
     position: fixed;
     justify-content: center;
     display: flex;
     z-index: 5;
     bottom: 0;
     width: 100%;
-    height: 70px;
-}
-
-.spotify{
-    color: #EC096F;
-    width: 220px;
-    right: 0;
+    height: 60px;
 }
 
 .spotify_content{
-    justify-content: space-between;
-    padding: 8px 20px;
+    padding: 5px 15px;
     align-items: center;
     display: flex;
-    border: 2px solid #EC096F;
-    border-radius: 63px;
 }
 
 .spotify_content:hover{
     transition: 0.2s;
-    background-color: #FCB0D2;
+    background-color: rgba(1,60,51,0.8);
+    border-radius: 60px;
 }
 
 .spotify_content svg{
+    margin-left: 8px;
     width: 85px;
+    height: 32px;
 }
 
 
@@ -227,6 +225,75 @@ footer{
     margin: 0;
 }
 
+
+
+/*MENU*/
+
+.menu{
+    transition: left .3s ease-in-out;
+    background-image: url(../assets/aurora_menudos.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px 20px 0 20px;
+    z-index: 4;
+    background-color: #313A39;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 100%;
+}
+
+.menu_close svg{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+.menu_logo img{
+    height: 120px;
+}
+
+.menu-open .menu{
+    left: 0;
+}
+
+.menu_section{
+    margin-top: 20px;
+}
+
+.menu_section ul li{
+    border-bottom: 1px solid #556361;
+    width: 100%;
+}
+
+.menu_section li{
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.menu_footer{
+    margin-left: -20px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu_redes ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_spotify{
+    background-color: #556361;
+    border-radius: 60px;
+    width: 190px;
+    margin: 9px;
+    height: 42px;
+}
 
 /*INICIO*/
 
@@ -366,7 +433,7 @@ footer{
 
     .wrapper{
         max-width: 1300px;
-        padding: 0 50px;
+        padding: 0 80px;
     }
 
     /*TIPOGRAFIA*/
@@ -415,7 +482,7 @@ footer{
         visibility: visible;
         text-align: center;
         right: 0;
-        width: 65px;
+        width: 60px;
         z-index: 1;
         position: fixed;
         top: 40%;
@@ -451,7 +518,7 @@ footer{
 
     .flex_column{
         grid-template-columns: repeat(2, auto);
-        grid-gap: 80px;
+        grid-gap: 60px;
         display: grid;
         grid-column: 50%;
     }
