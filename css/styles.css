@@ -8,6 +8,7 @@
 
 
 html, body {
+    background-color: #000;
     scroll-behavior: smooth;
     font-family: 'Archivo', sans-serif;
     font-size: 18px;
@@ -45,6 +46,8 @@ ul li {
 }
 
 button{
+    height: 42px;
+    cursor: pointer;
     background-color: transparent;
     justify-content: space-between;
     padding: 8px 20px;
@@ -52,6 +55,18 @@ button{
     display: flex;
     border: 2px solid #EC096F;
     border-radius: 63px;
+    margin: 0 0 0 auto;
+}
+
+button:hover{
+    border: 2px solid transparent;
+    transition: ease-in-out 0.2s;
+    background-color: #FCB0D2;
+    
+}
+
+button:focus{
+    outline: none;
 }
 
 .bgblack{
@@ -99,8 +114,9 @@ h1{
 }
 
 .button{
-    letter-spacing: 0.08em;
-    font-size: 0.60rem;
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 0.65rem;
     font-weight: 700;
 }
 
@@ -230,7 +246,8 @@ footer{
 /*MENU*/
 
 .menu{
-    transition: left .3s ease-in-out;
+    max-width: 400px;
+    transition: right .3s ease-in-out;
     background-image: url(../assets/aurora_menudos.png);
     background-position: top;
     background-repeat: no-repeat;
@@ -241,7 +258,7 @@ footer{
     height: 100vh;
     width: 100%;
     position: fixed;
-    left: 100%;
+    right: -400px;
 }
 
 .menu_close svg{
@@ -251,15 +268,15 @@ footer{
 }
 
 .menu_logo img{
-    height: 120px;
+    height: 100px;
 }
 
 .menu-open .menu{
-    left: 0;
+    right: 0;
 }
 
 .menu_section{
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .menu_section ul li{
@@ -273,6 +290,8 @@ footer{
 }
 
 .menu_footer{
+    justify-content: space-between;
+    height: 120px;
     margin-left: -20px;
     display: flex;
     position: absolute;
@@ -282,15 +301,20 @@ footer{
     width: 100%;
 }
 
+.menu_redes{
+    width: 200px;
+}
+
 .menu_redes ul{
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
 .menu_spotify{
-    background-color: #556361;
+    background-color: #BEFDF4;
     border-radius: 60px;
-    width: 190px;
+    width: 188px;
     margin: 9px;
     height: 42px;
 }
@@ -372,6 +396,8 @@ footer{
 }
 
 .ticket{
+    display: flex;
+    border-radius: 20px;
     padding: 40px 20px;
     width: 100%;
     height: auto;
@@ -382,13 +408,13 @@ footer{
 /*FORMULARIO*/
 .formulario{
     background-position: left bottom;
-    background-size: 50%;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-image: url(../assets/bg_auroraboreal.png);
     width: 100%;
     position: absolute;
     z-index: 2;
-    padding: 50px 0;
+    padding: 50px 0 200px;
     background-color: #000;
 }
 
@@ -421,7 +447,10 @@ footer{
     color: #556361;
 }
 
-
+.mensaje{
+    min-height: 100px;
+    resize: none;
+}
 
 @media screen and (min-width: 900px) {
 
@@ -439,6 +468,7 @@ footer{
     /*TIPOGRAFIA*/
 
     h1{
+        max-width: 600px;
         font-size: 2.36rem;
         font-weight: 400;
     }
@@ -488,13 +518,13 @@ footer{
         top: 40%;
         background: #B10653;
         box-shadow: 0px 33px 80px rgba(0, 0, 0, 0.06), 0px 9.94853px 24.1177px rgba(0, 0, 0, 0.0390953), 0px 4.13211px 10.0172px rgba(0, 0, 0, 0.03), 0px 1.4945px 3.62304px rgba(0, 0, 0, 0.0209047);
-        border-radius: 25px 0 0 25px;
+        border-radius: 20px 0 0 20px;
     }
 
     .boxredes ul li{
         margin: 20px 0;
     }
-    
+
 
     /*INICIO*/
 
@@ -531,6 +561,10 @@ footer{
 
     .input::placeholder{
         font-size: 1rem;
+    }
+
+    .formulario{
+        background-size: 50%;
     }
 
 }
