@@ -62,7 +62,7 @@ button:hover{
     border: 2px solid transparent;
     transition: ease-in-out 0.2s;
     background-color: #FCB0D2;
-    
+
 }
 
 button:focus{
@@ -169,12 +169,12 @@ h1{
 
 header{
     background: rgba(0, 0, 0, 0.01);
-    backdrop-filter: blur(10px);
+    backdrop-filter: url(filtros.svg#desenfoque);
     padding: 9px 0;
     z-index: 3;
     width: 100%;
     height: 70px;
-    position: fixed; 
+    position: fixed;
 }
 
 .header_wrapper{
@@ -532,12 +532,12 @@ footer{
         margin-left: -150px;
         margin-top: -150PX;
     }
-    
+
     .inicio_logo img{
         height: 300px;
         width: 300px;
     }
-    
+
 
     /*BIO*/
 
@@ -568,5 +568,3 @@ footer{
     }
 
 }
-
-
