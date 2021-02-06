@@ -1,7 +1,7 @@
 <defs>
 
   <filter id="desenfoque" x="0" y="0">
-    <feGaussianBlur in="SourceGraphic" stdDeviation="55"/>
+    <feGaussianBlur in="BackroundImage" stdDeviation="55"/>
   </filter>
 
 </defs>
