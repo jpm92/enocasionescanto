@@ -169,7 +169,7 @@ h1{
 
 header{
     background: rgba(0, 0, 0, 0.01);
-    backdrop-filter: url(filtros.svg#desenfoque);
+    backdrop-filter: blur(10px);  /*url(filtros.svg#desenfoque);*/
     padding: 9px 0;
     z-index: 3;
     width: 100%;
