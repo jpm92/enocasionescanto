@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesus Peña</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+
     <link rel="stylesheet" href="css/styles.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 
     <header>
         <div class="header_wrapper">
@@ -24,10 +27,9 @@
                     <line y1="10" x2="26" y2="10" stroke="#F1F3F3" stroke-width="2"/>
                 </svg>
             </a>
-        </div>
-
-        
+        </div>        
     </header>
+
 
     <nav class="menu">
         <div class="menu_close js-close">
@@ -43,21 +45,31 @@
 
         <div class="menu_section">
             <ul class="button">
-                <li>
-                    <a href="#bio" class="b100 js-close">BIO</a>
-                </li>
-                <li>
-                    <a href="#musica" class="b100 js-close">MUSICA</a>
-                </li>
-                <li>
-                    <a href="#multimedia" class="b100 js-close">MULTIMEDIA</a>
-                </li>
-                <li>
-                    <a href="#eventos" class="b100 js-close">EVENTOS</a>
-                </li>
-                <li >
-                    <a href="#contacto" class="b100 js-close">CONTACTO</a>
-                </li>
+                <a href="#bio" class="b100 js-close">
+                    <li>
+                        BIO
+                    </li>
+                </a>
+                <a href="#musica" class="b100 js-close">
+                    <li>
+                        MUSICA
+                    </li>
+                </a>
+                <a href="#multimedia" class="b100 js-close">
+                    <li>
+                        MULTIMEDIA
+                    </li>
+                </a>
+                <a href="#eventos" class="b100 js-close">
+                    <li>
+                        EVENTOS
+                    </li>
+                </a>
+                <a href="#contacto" class="b100 js-close">
+                    <li>
+                        CONTACTO
+                    </li>
+                </a>
             </ul>
         </div>
 
@@ -204,12 +216,14 @@
 
             <div class="margin_big ticket">
                 <div class="ticket_left">
-                    <h1 class="g700">
-                        Abril para vivir
-                    </h1>
-                    <p class="g700 regular margin_big">
-                        Actuación en el mítico certamen de cantautores granadino.
-                    </p>
+                    <div class="ticket_title margin_big">
+                        <h1 class="g700 margin_small">
+                            Abril para vivir
+                        </h1>
+                        <p class="g700 regular margin_small">
+                            Actuación en el mítico certamen de cantautores granadino.
+                        </p>
+                    </div>
 
                     <div class="flex_column">
                         <div>
@@ -235,10 +249,10 @@
 
             <div class="ticket">
                 <div class="ticket_left">
-                    <h1 class="g600">
+                    <h1 class="g600 margin_small">
                         No hay eventos próximos
                     </h1>
-                    <p class="regular margin_regular g700">
+                    <p class="regular g700">
                         ¿Quieres que toque en tu ciudad? ¡Escríbeme!
                     </p>
                 </div>
@@ -266,15 +280,15 @@
                 <span class="bgblack small g600">CONTACTO</span>
             </div>
 
-	        <h1 class="b100">¿Quieres ponerte en contacto? Mándame un mensaje</h1>
-            <form class="form__reg margin_big" action="">
+	        <h1 class="b100 margin_big">¿Quieres ponerte en contacto? Mándame un mensaje</h1>
+            <form class="form__reg margin_regular" action="">
                 <input class="regular b100 input" type="text" placeholder="Nombre" required>
                 <input class="regular b100 input" type="email" placeholder="Email" required>
                 <input class="regular b100 input" type="text" placeholder="Asunto" required>
                 <textarea class="regular b100 input mensaje" type="text" placeholder="Escribe aquí tu mensaje" required></textarea>
             </form>
 
-            <button class="margin_regular">
+            <button>
                 <p class="r400 button">ENVIAR</p>
             </button>
 

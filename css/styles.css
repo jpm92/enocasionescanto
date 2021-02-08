@@ -102,11 +102,13 @@ button:focus{
 /*TIPOGRAFIA*/
 
 h1{
+    
     font-size: 1.777rem;
     font-weight: 400;
 }
 
 .big{
+    line-height: 1.7rem;
     font-size: 1.333rem;
     font-weight: 400;
 }
@@ -155,12 +157,12 @@ h1{
     color: #DBE1E0;
 }
 
-.b600{
-    color: #556361;
-}
-
 .b400{
     color: #99A8A6;
+}
+
+.b600{
+    color: #556361;
 }
 
 .b700{
@@ -180,8 +182,6 @@ h1{
 /*HEADER*/
 
 header{
-    background: rgba(0, 0, 0, 0.01);
-    backdrop-filter: blur(10px);  /*url(filtros.svg#desenfoque);*/
     padding: 9px 0;
     z-index: 3;
     width: 100%;
@@ -192,16 +192,28 @@ header{
 .header_wrapper{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.minilogo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 60px;
+    background-color: rgba(1,60,51,0.8);
+    height: 52px;
+    width: 52px;
 }
 
 .minilogo svg{
+    
     width: auto;
-    height: 52px;
+    height: 38px;
 }
 
 
 .burger{
-    padding: 10px 20px 0 0;
+    padding-right: 20px;
     right: 0;
     position: absolute;
 }
@@ -223,6 +235,8 @@ footer{
 }
 
 .spotify_content{
+    background-color: rgba(1,60,51,0.8);
+    border-radius: 60px;
     padding: 5px 15px;
     align-items: center;
     display: flex;
@@ -230,8 +244,8 @@ footer{
 
 .spotify_content:hover{
     transition: 0.2s;
-    background-color: rgba(1,60,51,0.8);
-    border-radius: 60px;
+    background-color: #013C33
+    
 }
 
 .spotify_content svg{
@@ -274,6 +288,7 @@ footer{
 }
 
 .menu_close svg{
+    cursor: pointer;
     position: absolute;
     right: 0;
     margin-right: 20px;
@@ -294,6 +309,11 @@ footer{
 .menu_section ul li{
     border-bottom: 1px solid #556361;
     width: 100%;
+}
+
+.menu_section ul li:hover{
+    background-color: #556361;
+    opacity: 0.5;
 }
 
 .menu_section li{
@@ -359,11 +379,11 @@ footer{
 /*BIO*/
 
 .bio{
-    padding: 150px 0;
+    padding: 0 0 250px 0;
     background-color: black;
     background-image: url(../assets/bgsobremi.jpg);
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 100%;
     background-position: left bottom;
 }
 
@@ -378,6 +398,12 @@ footer{
     border-radius: 20px;
 }
 
+
+.flex_column{
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 20px;
+    display: grid;
+}
 
 /*VIDEOS*/
 
@@ -415,6 +441,10 @@ footer{
     background-color: #F1F3F3;
 }
 
+.ticket_title{
+    border-bottom: solid 1px #99A8A6;
+}
+
 .ticket_right::before{
     content: "";
     position: relative;
@@ -441,7 +471,7 @@ footer{
 }
 
 .ticket_button{
-    margin: 0 auto 0 0;
+    margin: auto auto 0 auto;
 }
 
 /*FORMULARIO*/
@@ -615,7 +645,6 @@ textarea{
         grid-template-columns: repeat(2, auto);
         grid-gap: 60px;
         display: grid;
-        grid-column: 50%;
     }
 
     #margin_super{
@@ -649,10 +678,6 @@ textarea{
 
     .ticket_content{
         display: flex;
-    }
-
-    .ticket_button{
-        margin: 0 auto;
     }
 
     /*FORMULARIO*/
