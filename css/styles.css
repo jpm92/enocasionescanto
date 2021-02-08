@@ -414,7 +414,7 @@ footer{
     width: 100%;
     position: absolute;
     z-index: 2;
-    padding: 50px 0 200px;
+    padding: 50px 0 0 0;
     background-color: #000;
 }
 
@@ -447,9 +447,34 @@ footer{
     color: #556361;
 }
 
-.mensaje{
-    min-height: 100px;
-    resize: none;
+textarea{
+    min-height: 120px;
+}
+
+.contacto_redes{
+    padding: 14px 0;
+    margin: 200px auto 70px auto;
+    max-width: 300px;
+}
+
+.contacto_redes ul{
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.contacto_redes ul li{
+    justify-content: center;
+    display: flex;
+    border-radius: 60px;
+    background-color: #013C33;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+}
+
+.contacto_socialitem{
+    height: 20px;
 }
 
 @media screen and (min-width: 900px) {
