@@ -310,15 +310,6 @@ footer{
     display: flex;
     justify-content: space-between;
 }
-
-.menu_spotify{
-    background-color: #BEFDF4;
-    border-radius: 60px;
-    width: 188px;
-    margin: 9px;
-    height: 42px;
-}
-
 /*INICIO*/
 
 .inicio{
@@ -395,13 +386,44 @@ footer{
     background-color: #DBE1E0;
 }
 
-.ticket{
-    display: flex;
-    border-radius: 20px;
-    padding: 40px 20px;
+.ticket_left{
+    border-radius: 20px 20px 0 0;
+    padding: 40px 20px 20px 20px;
     width: 100%;
     height: auto;
     background-color: #F1F3F3;
+}
+
+.ticket_right{
+    border-radius: 0 0 20px 20px;
+    padding: 20px 20px;
+    width: 100%;
+    background-color: #F1F3F3;
+}
+
+.ticket_right::before{
+    content: "";
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #DBE1E0;
+    border-radius: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.ticket_left::after{
+    bottom: -30px;
+    left: 30px;
+    margin: 0 0 0 auto;
+    content: "";
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #DBE1E0;
+    border-radius: 50%;
 }
 
 
@@ -581,6 +603,23 @@ textarea{
     #margin_super{
         margin-top: 200px;
     }
+
+    /*EVENTOS*/
+
+    .ticket{
+        display: flex;
+    }
+
+    .ticket_left{
+        width: 70%;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    .ticket_right{
+        width: 30%;
+        border-radius: 0 20px 20px 0;
+    }
+
 
     /*FORMULARIO*/
 
