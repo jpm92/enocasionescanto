@@ -84,11 +84,19 @@ button:focus{
 }
 
 .margin_big{
-    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .margin_regular{
-    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.margin_small{
+    margin-bottom: 15px;
+}
+
+.margin_icon{
+    margin-right: 5px;
 }
 
 /*TIPOGRAFIA*/
@@ -149,6 +157,10 @@ h1{
 
 .b600{
     color: #556361;
+}
+
+.b400{
+    color: #99A8A6;
 }
 
 .b700{
@@ -388,13 +400,15 @@ footer{
 
 .ticket_left{
     border-radius: 20px 20px 0 0;
-    padding: 40px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     width: 100%;
     height: auto;
     background-color: #F1F3F3;
+    border-bottom: dashed 2px #DBE1E0;
 }
 
 .ticket_right{
+    display: flex;
     border-radius: 0 0 20px 20px;
     padding: 20px 20px;
     width: 100%;
@@ -426,6 +440,9 @@ footer{
     border-radius: 50%;
 }
 
+.ticket_button{
+    margin: 0 auto 0 0;
+}
 
 /*FORMULARIO*/
 .formulario{
@@ -470,6 +487,7 @@ footer{
 }
 
 textarea{
+    resize: none;
     min-height: 120px;
 }
 
@@ -606,22 +624,42 @@ textarea{
 
     /*EVENTOS*/
 
+    .eventos{
+        padding: 80px 0;
+    }
+
     .ticket{
         display: flex;
+        
     }
 
     .ticket_left{
-        width: 70%;
+        padding: 40px 20px 20px 40px;
+        border-bottom: none;
+        border-right: dashed 2px #DBE1E0;
+        width: 75%;
         border-radius: 20px 0 0 20px;
     }
     
     .ticket_right{
-        width: 30%;
+        width: 25%;
         border-radius: 0 20px 20px 0;
     }
 
 
+    .ticket_content{
+        display: flex;
+    }
+
+    .ticket_button{
+        margin: 0 auto;
+    }
+
     /*FORMULARIO*/
+
+    .formulario{
+        padding-top: 100px;
+    }
 
     .input::placeholder{
         font-size: 1rem;
