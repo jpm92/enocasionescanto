@@ -223,6 +223,9 @@ header{
 
 
 .burger{
+    align-items: center;
+    display: flex;
+    height: 45px;
     padding-right: 20px;
     right: 0;
     position: absolute;
@@ -276,6 +279,14 @@ footer{
     margin: 0;
 }
 
+
+.boxredes_socialitem svg{
+    fill:  #FCB0D2;
+}
+
+.boxredes_socialitem svg:hover{
+    fill: #F1F3F3;
+}
 
 
 /*MENU*/
@@ -351,9 +362,22 @@ footer{
     justify-content: space-between;
 }
 
-.menu_redes ul li svg:hover{
-    color: #04B499;
+.menu_redes ul li{
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
 }
+
+.menuredes_socialitem svg{
+    fill: #04B499;
+}
+
+.menuredes_socialitem:hover svg{
+    fill: #87FCEB;
+}
+
 /*INICIO*/
 
 .inicio{
@@ -535,7 +559,7 @@ textarea{
 
 .contacto_redes{
     padding: 14px 0;
-    margin: 100px auto 70px auto;
+    margin: 80px auto 80px auto;
     max-width: 300px;
 }
 
@@ -654,7 +678,7 @@ textarea{
     /*BIO*/
 
     .bio{
-        padding: 150px 0;
+        padding: 50px 0;
         background-size: 40%;
     }
 
@@ -712,7 +736,7 @@ textarea{
     }
 
     .contacto_redes{
-        margin: 200px auto 70px auto;
+        margin: 150px auto 90px auto;
     }
 
 }
