@@ -199,11 +199,21 @@ header{
     justify-content: center;
     align-items: center;
     display: flex;
-    border-radius: 60px;
-    background-color: rgba(1,60,51,0.8);
     height: 52px;
+    border-radius: 60px;
     width: 52px;
 }
+
+.minilogo:hover{
+    transition: 0.2s;
+    background-color: #013C33;
+}
+
+.fondo{
+    transition: ease-in-out 0.6s;
+    background-color: rgba(1,60,51,0.8);
+}
+
 
 .minilogo svg{
     
@@ -235,7 +245,6 @@ footer{
 }
 
 .spotify_content{
-    background-color: rgba(1,60,51,0.8);
     border-radius: 60px;
     padding: 5px 15px;
     align-items: center;
@@ -279,7 +288,7 @@ footer{
     background-repeat: no-repeat;
     background-size: contain;
     padding: 20px 20px 0 20px;
-    z-index: 4;
+    z-index: 6;
     background-color: #313A39;
     height: 100vh;
     width: 100%;
@@ -312,8 +321,7 @@ footer{
 }
 
 .menu_section ul li:hover{
-    background-color: #556361;
-    opacity: 0.5;
+    background-color: rgba(85, 99, 97, 0.5);
 }
 
 .menu_section li{
@@ -334,13 +342,17 @@ footer{
 }
 
 .menu_redes{
-    width: 200px;
+    width: 300px;
 }
 
 .menu_redes ul{
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+.menu_redes ul li svg:hover{
+    color: #04B499;
 }
 /*INICIO*/
 
@@ -442,7 +454,7 @@ footer{
 }
 
 .ticket_title{
-    border-bottom: solid 1px #99A8A6;
+    border-bottom: solid 1.5px #99A8A6;
 }
 
 .ticket_right::before{
@@ -523,7 +535,7 @@ textarea{
 
 .contacto_redes{
     padding: 14px 0;
-    margin: 200px auto 70px auto;
+    margin: 100px auto 70px auto;
     max-width: 300px;
 }
 
@@ -537,10 +549,15 @@ textarea{
     justify-content: center;
     display: flex;
     border-radius: 60px;
-    background-color: #013C33;
+    background-color: rgba(1,60,51,0.8);
     align-items: center;
     height: 42px;
     width: 42px;
+}
+
+.contacto_redes ul li:hover{
+    transition: ease-in-out 0.2s;
+    background-color: #013C33;
 }
 
 .contacto_socialitem{
@@ -692,6 +709,10 @@ textarea{
 
     .formulario{
         background-size: 50%;
+    }
+
+    .contacto_redes{
+        margin: 200px auto 70px auto;
     }
 
 }
