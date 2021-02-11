@@ -9,13 +9,6 @@ $(document).ready(function () {
 });
 
 
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 600) {
-     $('.minilogo').addClass('fondo');
-  } else {
-     $('.minilogo').removeClass('fondo');
-  }
-});
 
 $(window).scroll(function(){
   if ($(this).scrollTop() > 20) {
