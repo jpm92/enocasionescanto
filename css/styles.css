@@ -306,6 +306,7 @@ footer{
 .menu_section ul li{
     border-bottom: 1px solid #556361;
     width: 100%;
+    padding-left: 10px;
 }
 
 .menu_section ul li:hover{
